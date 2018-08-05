@@ -1,0 +1,31 @@
+$black: #2A2A2A;
+$grey: #D2CFCF;
+$orange: #DA331D;
+$gold: #E5BF4B;
+
+@mixin sectionBackground($path) {
+	background-image: url($path);
+    background-position: center;
+    	background-size: cover;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.wrapper {
+    max-width: 1280px;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 75px 0;
+    margin-bottom:0;
+}
