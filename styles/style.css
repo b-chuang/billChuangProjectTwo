@@ -156,6 +156,9 @@ img {
   padding: 75px 0;
   margin-bottom: 0; }
 
+li:focus {
+  border-top: 2px solid turquoise; }
+
 /* HOVER EFFECTS STYLES START */
 /* ANIMATED SVG NAV ROUND HOVER */
 /*       Just setting CSS for the page   */
@@ -426,12 +429,31 @@ h3.aboutUsGallery__cell__heading {
     font-size: 2.2rem;
     letter-spacing: 0.2rem; }
 
+@media (max-width: 1100px) {
+  .navColumns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-left: 50%; }
+  .headerContent {
+    text-align: center;
+    line-height: 40px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-item-align: center;
+    align-self: center; }
+    .headerContent__sub-heading {
+      margin: 15px 0; } }
+
 @media (max-width: 880px) {
   .navColumns {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column; }
+    flex-direction: column;
+    margin-left: 0; }
   .headerContent {
     text-align: center;
     line-height: 40px;
@@ -460,6 +482,13 @@ h3.aboutUsGallery__cell__heading {
     background-color: #DA331D; }
   .button--black {
     background-color: #000000; }
+  .button:hover {
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.headerContent button {
+  margin-top: 5%;
+  padding: 12px 25px; }
 
 /* BUTTON STYLES END */
 /* ABOUT US SECTION STYLES */
@@ -502,6 +531,9 @@ h3.aboutUsGallery__cell__heading {
   margin: 20px 50px; }
   .aboutUsGalleryCell__heading {
     margin-top: 30px; }
+  .aboutUsGalleryCell:hover {
+    /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        transition: 0.2s all ease-in; */ }
 
 .aboutUsContentText {
   -webkit-box-orient: vertical;
@@ -840,7 +872,8 @@ h2.reviewHeading__h2 {
   left: 0; }
   .eventsContent__overlay__body {
     font-size: 1.6rem;
-    width: 80%; }
+    width: 80%;
+    margin-top: 5%; }
   .eventsContent__overlay__heading {
     position: relative;
     display: inline-block;
@@ -986,6 +1019,10 @@ h2.reviewHeading__h2 {
   .blogContent__cell__link {
     font-size: 1.4rem;
     color: #DA331D; }
+    .blogContent__cell__link:hover {
+      margin-left: 2px;
+      border-top: 2px solid black;
+      border-bottom: 2px solid black; }
 
 @media (max-width: 786px) {
   .blogContent {
@@ -1144,7 +1181,9 @@ h2.reviewHeading__h2 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    line-height: 35px; } }
+    line-height: 35px; }
+  .footerSocial__cell {
+    top: 2%; } }
 
 /* END OF MAX-WIDTH 785PX */
 /* FOOTER SECTION STYLES END */
