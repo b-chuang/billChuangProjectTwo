@@ -186,6 +186,9 @@ body {
   font-size: 1.6rem;
   font-family: "Lora", serif; }
 
+h3.aboutUsGallery__cell__heading {
+  margin-top: 14px; }
+
 /* TOP HEADER NAV STYLING START */
 .navList {
   display: -webkit-box;
@@ -340,9 +343,6 @@ body {
   .aboutUsGalleryCell__heading {
     margin-top: 30px; }
 
-.aboutUsGallery__cell__heading {
-  margin-top: 2px; }
-
 .aboutUsContentText {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -487,7 +487,7 @@ body {
   height: 600px; }
 
 .reviewHeading {
-  padding: 4%;
+  padding: 5%;
   text-align: center; }
 
 h2.reviewHeading__h2 {
@@ -506,14 +506,15 @@ h2.reviewHeading__h2 {
   position: relative; }
   .reviewsContent__text {
     font-size: 1.8rem;
-    margin-top: 35px; }
+    margin-top: 30px; }
   .reviewsContent__body {
     position: absolute;
     width: 500px; }
   .reviewsContent__author {
+    width: 300px;
     display: inline-block;
     margin-top: 150px;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
     font-style: italic; }
 
 /* FLICKITY SECTION STYLE START */
@@ -548,16 +549,21 @@ h2.reviewHeading__h2 {
   right: -70px; }
 
 @media (max-width: 1170px) {
+  .sectionFlickityBackground {
+    height: 440px; }
   .reviewsContent {
+    position: relative;
     /* position outside */ }
     .reviewsContent__body {
       margin-top: -10%;
-      width: 100%;
-      font-size: 1.5rem; }
+      width: 400px;
+      font-size: 1.5rem;
+      position: absolute; }
     .reviewsContent__author {
-      margin-top: 125px; }
-    .reviewsContent .sectionFlickityBackground {
-      height: 400px; }
+      width: 300px;
+      margin-top: 60px;
+      font-size: 1.4rem;
+      margin-bottom: 0px; }
     .reviewsContent .flickity-prev-next-button.previous {
       left: -80px; }
     .reviewsContent .flickity-prev-next-button.next {
@@ -565,18 +571,27 @@ h2.reviewHeading__h2 {
   /* END OF MAX-WIDTH 1170PX */ }
 
 @media (max-width: 905px) {
-  .reviewsContent__body {
-    margin-top: -60px;
-    width: 100%;
-    font-size: 1.6rem; }
-  .reviewsContent__author {
-    margin-top: 170px; }
+  .reviewsContent {
+    position: relative; }
+    .reviewsContent__body {
+      margin-top: -70px;
+      width: 300px;
+      font-size: 1.4rem;
+      position: absolute; }
+    .reviewsContent__author {
+      width: 300px;
+      margin: 19px;
+      font-size: 1.4rem;
+      margin-bottom: 0px; }
   .sectionFlickityBackground {
-    height: 550px; }
+    padding-top: 20px;
+    height: 380px; }
   /* position outside */
   .flickity-prev-next-button.previous {
+    top: 35px;
     left: -60px; }
   .flickity-prev-next-button.next {
+    top: 35px;
     right: -60px; } }
 
 /* END OF MAX-WIDTH 905PX */
@@ -586,16 +601,20 @@ h2.reviewHeading__h2 {
     margin: 250px 0;
     text-align: center; }
   .reviewsContent {
+    position: relative;
     /* position outside */ }
     .reviewsContent__body {
-      margin-top: -90px;
-      width: 100%;
-      font-size: 1.3rem; }
+      margin-top: -80px;
+      width: 300px;
+      font-size: 1.3rem;
+      position: absolute; }
     .reviewsContent__author {
-      margin-top: 160px;
-      font-size: 1.0rem; }
+      width: 300px;
+      margin-top: 15px;
+      font-size: 1.3rem;
+      margin-bottom: 0px; }
     .reviewsContent .sectionFlickityBackground {
-      height: 350px; }
+      height: 280px; }
     .reviewsContent .flickity-prev-next-button.previous {
       left: -60px; }
     .reviewsContent .flickity-prev-next-button.next {
@@ -609,15 +628,20 @@ h2.reviewHeading__h2 {
     display: inline-block;
     margin: 20px 0;
     text-align: center; }
-  .reviewsContent__body {
-    margin-top: -90px;
-    width: 100%;
-    font-size: 1.3rem; }
-  .reviewsContent__author {
-    margin-top: 200px;
-    font-size: 1.0rem; }
-  .reviewsContent .sectionFlickityBackground {
-    height: 130px; } }
+  .reviewsContent {
+    position: relative; }
+    .reviewsContent__body {
+      position: absolute;
+      margin-top: -90px;
+      width: 200px;
+      font-size: 1.3rem; }
+    .reviewsContent__author {
+      margin-top: 20px;
+      width: 220px;
+      font-size: 1.2rem;
+      margin-bottom: 0px; }
+    .reviewsContent .sectionFlickityBackground {
+      height: 130px; } }
 
 /* END OF MAX-WIDTH 460PX */
 /* REVIEWS SECTION STYLES END */
@@ -665,15 +689,15 @@ h2.reviewHeading__h2 {
     .eventsContent__overlay__heading::after {
       content: '';
       border-bottom: 1px solid #FFFFFF;
-      width: 60%;
       position: absolute;
+      width: 60%;
       bottom: -50%;
       left: 20%;
       height: 1px; }
 
 @media (max-width: 1050px) {
   .eventsContent__overlay__heading {
-    font-size: 3.0rem; }
+    font-size: 1.6em; }
   .eventsContent__overlay__body {
     font-size: 1.4rem; } }
 
@@ -689,7 +713,8 @@ h2.reviewHeading__h2 {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%; }
   .eventsContent__overlay__heading {
-    font-size: 4.0rem; }
+    font-size: 2.4rem;
+    margin-bottom: 40px; }
   .eventsContent__overlay__body {
     font-size: 1.8rem; } }
 
@@ -698,7 +723,7 @@ h2.reviewHeading__h2 {
   .eventsContent__overlay__body {
     font-size: 1.4rem; }
   .eventsContent__overlay__heading {
-    font-size: 3.6rem; } }
+    font-size: 2.0rem; } }
 
 /* END OF MAX-WIDTH 525PX */
 /* EVENTS SECTION STYLES END */
@@ -768,8 +793,12 @@ h2.reviewHeading__h2 {
     flex-wrap: wrap; }
   .statsContent__cell {
     width: calc(50% - 20px);
-    margin: 20px 10px;
-    font-size: 1.1rem; } }
+    margin: 15px 5px;
+    font-size: 1.1rem; }
+    .statsContent__cell__icon {
+      font-size: 3.0em; }
+    .statsContent__cell__body {
+      font-size: 1.8rem; } }
 
 /* END OF MAX-WIDTH 785PX */
 /* STATS SECTION STYLES END */
@@ -797,7 +826,7 @@ h2.reviewHeading__h2 {
     font-size: 1.4rem;
     color: #DA331D; }
 
-@media (max-width: 785px) {
+@media (max-width: 786px) {
   .blogContent {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -808,7 +837,7 @@ h2.reviewHeading__h2 {
     width: 100%;
     margin-bottom: 25px; } }
 
-/* END OF MAX-WIDTH 785PX */
+/* END OF MAX-WIDTH 786PX */
 /* BLOG SECTION STYLES END */
 /* FOOTER SECTION STYLES START */
 .footer {

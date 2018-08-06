@@ -6,8 +6,7 @@ $gold: #E5BF4B;
 @mixin sectionBackground($path) {
 	background-image: url($path);
     background-position: center;
-    	background-size: cover;
-
+    background-size: cover;
 }
 
 a {
