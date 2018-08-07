@@ -14,31 +14,31 @@
 
 
 <body>
-<!-- HEADER START -->
+    <!-- HEADER START -->
     <header class="header">
         <div class="wrapper">
 
             <!-- TOP NAV START -->
             <div class="headerNav">
                 <nav class="headerNav__logo">
-                    <h1>restaurant</h1>
+                    <h1 id="home">restaurant</h1>
                 </nav> 
                 <nav class="headerNavMenu"> 
                     <ul class="navList navColumns">                        
                         <li class="navList__item" tabindex="1">
-                            <a href="#" class="navList__link"><span class="spot">Home</span></a>
+                            <a href="#home" class="navList__link"><span class="spot">Home</span></a>
                         </li>                    
                         <li class="navList__item" tabindex="2">
-                            <a href="#" class="navList__link"><span class="spot">Menu</span></a>
+                            <a href="#menu" class="navList__link"><span class="spot">Menu</span></a>
                         </li>        
                         <li class="navList__item" tabindex="3">
-                            <a href="#" class="navList__link"><span class="spot">Blog</span></a>
+                            <a href="#blog" class="navList__link"><span class="spot">Blog</span></a>
                         </li>                
                         <li class="navList__item" tabindex="4">
-                            <a href="#" class="navList__link"><span class="spot">Contact</span></a>
+                            <a href="#contact" class="navList__link"><span class="spot">Contact</span></a>
                         </li>
                         <li class="navList__item" tabindex="5">
-                            <a href="#" class="navList__link"><span class="spot">About Us</span></a>
+                            <a href="#about" class="navList__link"><span class="spot">About Us</span></a>
                         </li>                        
                     </ul>
                 </nav>
@@ -46,7 +46,7 @@
                 
     
             <div class="headerContent">
-                <h1 class="headerContent__heading">Welcome</h1>
+                <h1  class="headerContent__heading">Welcome</h1>
                 <h2 class="headerContent__subHeading">to my restaurant website</h2>
                 <button class="button button--orange button--hover buttonhov" tabindex="6">Start</button>
             </div>
@@ -62,13 +62,26 @@
         <!-- ABOUT US SECTION START -->
         <section class="aboutUs">
             <div class="wrapper">
-                <h1 class="aboutUsHeading">We are...</h1>
+                <h1 id="about"class="aboutUsHeading">We are...</h1>
                 <div class="aboutUsContent">
                     <div class="aboutUsGallery">
-                        <figure class="aboutUsGalleryCell">
-                            <img src="assets/image-2.jpeg" alt="A colorful plate of assorted cooked vegetables">
-                            <h3 class="aboutUsGallery__cell__heading">Local</h3>
-                        </figure>
+
+   
+                            <figure class="aboutUsGalleryCell">
+                                <div class="containerAbout">
+
+                                    <img src="assets/image-2.jpeg" alt="A colorful plate of assorted cooked vegetables">
+                                    <h3 class="aboutUsGallery__cell__heading">Local</h3>
+                                </div>
+                                
+                                
+                                <div class="aboutUsGallery__cell__overlay">
+                                    <h4 class="aboutUsGallery__cell__overlay__text">lorem ipsum</h4>
+                                </div>
+                            </figure>
+
+
+
                         <figure class="aboutUsGalleryCell">
                             <img src="assets/image-3.jpeg" alt="Glass bowl of assorted spices ready for mixing">
                             <h3 class="aboutUsGallery__cell__heading">Modern</h3>
@@ -94,7 +107,7 @@
         <!-- ABOUT US SECTION END -->
         
         <!-- WELCOME SECTION START -->
-        <section class="welcome">
+        <section id="menu" class="welcome">
             <div class="wrapper">
                 <div class="welcomeContent">
                     <h1 class="welcomeContent__heading">Welcome to Restaraunt</h1>
@@ -183,7 +196,7 @@
         <!-- EVENTS SECTION END-->
 
         <!-- ASK QUESTION SECTION START -->
-        <section class="askQuestion">
+        <section id="contact" class="askQuestion">
             <div class="wrapper">
                 <h2>Ask a question</h2>
                 <form action="POST" class="askQuestionForm" name="askQuestionForm">
@@ -224,7 +237,7 @@
         <!-- STATS SECTION END -->
             
         <!-- BLOG SECTION START -->
-        <section class="blog">
+        <section id="blog" class="blog">
             <div class="wrapper">
                 <h2>Our blog</h2>
                 <div class="blogContent">
@@ -354,6 +367,7 @@
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
     <script>
 
         $(function() {
@@ -370,6 +384,12 @@
                 freeScroll:true,
                 contain:true
             });
+
+        $('a').smoothScroll({
+                offset: -1,
+                speed: 700
+            });
+
     </script>
     <!--JQUERY SCRIPT END -->
 

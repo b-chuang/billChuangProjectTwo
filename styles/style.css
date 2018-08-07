@@ -461,6 +461,8 @@ h3.aboutUsGallery__cell__heading {
   margin: 5%; }
 
 .aboutUsGalleryCell {
+  overflow: hidden;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -480,6 +482,28 @@ h3.aboutUsGallery__cell__heading {
   .aboutUsGalleryCell:hover {
     /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
         transition: 0.2s all ease-in; */ }
+  .aboutUsGalleryCell:hover .aboutUsGallery__cell__overlay {
+    top: calc(0% - 38px); }
+
+.aboutUsGallery__cell__overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -100%;
+  -webkit-transition: .3s all;
+  -o-transition: .3s all;
+  transition: .3s all;
+  background: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: white; }
 
 .aboutUsContentText {
   -webkit-box-orient: vertical;
@@ -580,12 +604,23 @@ h3.aboutUsGallery__cell__heading {
   align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  -o-transition: transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s; }
   .servicesContent__cell__heading {
     margin: 20px 0; }
   .servicesContent__cell__body {
     font-size: 1.8rem;
     width: 70%; }
+  .servicesContent__cell:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 @media (max-width: 785px) {
   .servicesContent__cell {
@@ -1129,7 +1164,11 @@ h2.reviewHeading__h2 {
     justify-content: center;
     line-height: 35px; }
   .footerSocial__cell {
-    top: 2%; } }
+    top: 2%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; } }
 
 /* END OF MAX-WIDTH 785PX */
 /* FOOTER SECTION STYLES END */
