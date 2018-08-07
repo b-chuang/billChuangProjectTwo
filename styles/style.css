@@ -133,7 +133,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #777677; }
 
 img {
   width: 100%;
@@ -157,108 +158,7 @@ img {
   margin-bottom: 0; }
 
 li:focus {
-  border-top: 2px solid turquoise; }
-
-/* HOVER EFFECTS STYLES START */
-/* ANIMATED SVG NAV ROUND HOVER */
-/*       Just setting CSS for the page   */
-* {
-  margin: 0;
-  padding: 0; }
-
-html,
-css {
-  width: 100%;
-  height: 100%; }
-
-.position {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  margin-top: 15%; }
-
-#workarea {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #1e1a3e;
-  font-family: Raleway; }
-
-#personal {
-  color: white;
-  text-decoration: none;
-  position: absolute;
-  bottom: 15px;
-  right: 2%; }
-
-/*    start code for the actual button:         */
-/*   
-    Spot is the span on the inside of the href that
-    fills the parent and makes the hover and link work
-    for the entire div
-*/
-.spot {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 9px;
-  left: 3px;
-  text-align: center; }
-
-/*
-    This is the outer svg wrapper that the SVG itself will 
-    fill. Multiple svg-wrapper classes can be put side by side.
-*/
-.svg-wrapper {
-  margin-top: 0;
-  position: relative;
-  width: 150px;
-  /*make sure to use same height/width as in the html*/
-  height: 40px;
-  display: inline-block;
-  border-radius: 3px;
-  margin-left: 5px;
-  margin-right: 5px; }
-
-/*
-  This is where we define the fill, color, thickness,
-  and stroke pattern of the SVG when there is no hover.
-  The dasharray and offset together define the line position
-  under the words. Here's also where the transition speed is set.
-*/
-#shape {
-  stroke-width: 6px;
-  fill: transparent;
-  stroke: #009FFD;
-  stroke-dasharray: 85 400;
-  stroke: none;
-  -webkit-transition: .5s all ease;
-  -o-transition: .5s all ease;
-  transition: .5s all ease; }
-
-/* 
-    Pushing the text up into the SVG. Without this the
-    text would be below the div's.
-*/
-#text {
-  margin-top: -35px;
-  text-align: center; }
-
-#text a {
-  color: white;
-  text-decoration: none;
-  font-weight: 100;
-  font-size: 1.1em; }
-
-/* 
-    Changing the shape on hover. I change the color of the stroke,
-make it thinner, then set it to again wrap around the entire parent element.
-*/
-.svg-wrapper:hover #shape {
-  stroke-dasharray: 50 0;
-  stroke-width: 3px;
-  stroke-dashoffset: 0;
-  stroke: #d60606; }
+  border-left: 2px solid turquoise; }
 
 /* HOVER BUTTON */
 html, body {
@@ -318,6 +218,52 @@ html, body {
 .buttonhov--start {
   margin-top: 20px;
   padding: 10px 25px; }
+
+/* footerSocial hover */
+li:hover.facebook {
+  border: none;
+  -webkit-box-shadow: 0 0 0px #3b5998;
+  box-shadow: 0 0 0px #3b5998;
+  -webkit-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in; }
+
+li:hover .fa-facebook-square {
+  color: #3b5998;
+  text-shadow: 0 0 4px #3b5998;
+  -webkit-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in; }
+
+li:hover.instagram {
+  border: none;
+  -webkit-box-shadow: 0 0 0px #bc2a8d;
+  box-shadow: 0 0 0px #bc2a8d;
+  -webkit-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in; }
+
+li:hover .fa-instagram {
+  color: #bc2a8d;
+  text-shadow: 0 0 4px #bc2a8d;
+  -webkit-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in; }
+
+li:hover.pinterest {
+  border: none;
+  -webkit-box-shadow: 0 0 0px #c21700;
+  box-shadow: 0 0 0px #c21700;
+  -webkit-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in; }
+
+li:hover .fa-pinterest-p {
+  color: #dd4b39;
+  text-shadow: 0 0 4px #c21700;
+  -webkit-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in; }
 
 h1, h2, h3, h4, h5, h6, ul {
   margin: 0;
@@ -1150,7 +1096,7 @@ h2.reviewHeading__h2 {
   right: -10%;
   top: 50%; }
   .footerSocial__cell li {
-    font-size: 2.0rem;
+    font-size: 2.2rem;
     margin: 50px 0;
     color: #797879; }
 
