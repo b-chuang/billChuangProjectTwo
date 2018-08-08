@@ -160,6 +160,80 @@ img {
 li:focus {
   border-left: 2px solid turquoise; }
 
+/* HAMBURGER TOGGLE START */
+label[for="toggle"] {
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  color: black;
+  z-index: 6;
+  font-size: 3rem; }
+
+.navigation--responsive {
+  display: none; }
+
+#toggle {
+  display: none; }
+
+i.fa-bars {
+  display: none; }
+
+@media (max-width: 1100px) {
+  #toggle:checked ~ .navigation--responsive {
+    top: 0vh; }
+  .headerNavMenu {
+    display: none; }
+  i.fa-bars {
+    display: block;
+    cursor: pointer;
+    color: white; }
+  .navigation--responsive {
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: -100vh;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    -webkit-transition: top 0.7s ease-in;
+    -o-transition: top 0.7s ease-in;
+    transition: top 0.7s ease-in; }
+    .navigation--responsive ul {
+      display: block;
+      height: 70vh;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      margin: 85px 0 0 0;
+      padding: 0; }
+    .navigation--responsive li a {
+      text-decoration: none;
+      color: white;
+      -webkit-transition: -webkit-transform .3s;
+      transition: -webkit-transform .3s;
+      -o-transition: transform .3s;
+      transition: transform .3s;
+      transition: transform .3s, -webkit-transform .3s; }
+      .navigation--responsive li a:hover {
+        -webkit-transform: translate(1.1);
+        -ms-transform: translate(1.1);
+        transform: translate(1.1); } }
+
+/* HAMBURGER TOGGLE END */
 /* HOVER BUTTON */
 html, body {
   -webkit-perspective: 700px;

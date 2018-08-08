@@ -18,37 +18,64 @@
     <header class="header">
         <div class="wrapper">
 
+            <!-- HAMBURGER TOGGLE -->
+            <label for="toggle">
+                <i class="fas fa-bars"></i>
+            </label>
+
             <!-- TOP NAV START -->
             <div class="headerNav">
                 <nav class="headerNav__logo">
                     <h1 id="home">restaurant</h1>
                 </nav> 
                 <nav class="headerNavMenu"> 
-                    <ul class="navList navColumns">                        
-                        <li class="navList__item" tabindex="1">
-                            <a href="#home" class="navList__link"><span class="spot">Home</span></a>
+                    <ul class="navList navColumns">         
+                       <li class="navList__item" tabindex="1">
+                            <a href="#home" class="navList__link">Home</a>
                         </li>                    
                         <li class="navList__item" tabindex="2">
-                            <a href="#menu" class="navList__link"><span class="spot">Menu</span></a>
+                            <a href="#menu" class="navList__link">Menu</a>
                         </li>        
                         <li class="navList__item" tabindex="3">
-                            <a href="#blog" class="navList__link"><span class="spot">Blog</span></a>
+                            <a href="#blog" class="navList__link">Blog</a>
                         </li>                
                         <li class="navList__item" tabindex="4">
-                            <a href="#contact" class="navList__link"><span class="spot">Contact</span></a>
+                            <a href="#contact" class="navList__link">Contact</span></a>
                         </li>
                         <li class="navList__item" tabindex="5">
-                            <a href="#about" class="navList__link"><span class="spot">About Us</span></a>
+                            <a href="#about" class="navList__link">About Us</a>
                         </li>                        
                     </ul>
                 </nav>
+
+                <!-- RESPONSIVE HAMBURGER MENU START -->
+            <input type="checkbox" id="toggle" name="toggle">
+                <nav class="navigation--responsive">
+                    <ul>
+                        <li>    
+                            <a href="#home">Home</a>   
+                        </li>
+                        <li>
+                            <a href="#menu">Menu</a>
+                        </li>
+                        <li>
+                            <a href="#blog">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#about">About Us</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
+            <!-- RESPONSIVE HAMBURGER MENU END -->
                 
-    
             <div class="headerContent">
                 <h1  class="headerContent__heading">Welcome</h1>
                 <h2 class="headerContent__subHeading">to my restaurant website</h2>
-                <button class="button button--orange button--hover buttonhov" tabindex="6">Start</button>
+                <a href="#about"><button class="button button--orange button--hover buttonhov" tabindex="6">Start</button></a>
             </div>
             <!-- TOP NAV END -->
         </div>
@@ -99,7 +126,7 @@
                         <h3>About Us</h3>
                         <p class="aboutUsContentText__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         Ut enim ad minim veniam, quis nostrud.</p>
-                        <button class="button button--orange button--hover buttonhov">More</button>
+                        <a href="#menu"><button class="button button--orange button--hover buttonhov">More</button></a>
                     </div>
                 </div>
             </div>
@@ -114,7 +141,7 @@
                     <p class="welcomeContent__body">Suspendisse convallis turpis sem, nec tincidunt mauris tincidunt sed. Nunc vulputate felis eu nunc moletie molestie vel tempus
                         purus. Donec sed tellus mi. Fusce tincidunt tudin arcu, nec fringilla ex he rerit eget. Maecenas fringilla neque eu est
                         tincon. Vivamus consequat variusimperdiet. Mauris laoreet risus pharetra ollis.</p>
-                    <button class="button button--black button--hover buttonhov">View</button>
+                    <a href="https://sg-everydayonsales-infomartglobal.netdna-ssl.com/wp-content/uploads/2013/10/Popeyes-Weekday-Deal-Promotion-2013-Singapore-Deals-Offer-Shopping-EverydayOnSales.jpg" target="_blank">  <button class="button button--black button--hover buttonhov">View</button></a>
                 </div>
             </div>
         </section>
