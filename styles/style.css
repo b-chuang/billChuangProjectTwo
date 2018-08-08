@@ -843,6 +843,10 @@ h2.reviewHeading__h2 {
 
 /* END OF MAX-WIDTH 905PX */
 @media (max-width: 640px) {
+  .sectionFlickity {
+    margin: 0 auto;
+    max-width: 40%;
+    margin-bottom: 10px; }
   h2.reviewHeading {
     display: inline-block;
     margin: 250px 0;
@@ -851,13 +855,13 @@ h2.reviewHeading__h2 {
     position: relative;
     /* position outside */ }
     .reviewsContent__body {
-      margin-top: -80px;
+      margin-top: -30px;
       width: 300px;
       font-size: 1.3rem;
       position: absolute; }
     .reviewsContent__author {
       width: 300px;
-      margin-top: 15px;
+      margin-top: 50px;
       font-size: 1.3rem;
       margin-bottom: 0px; }
     .reviewsContent .sectionFlickityBackground {
@@ -869,8 +873,10 @@ h2.reviewHeading__h2 {
 
 /* END OF MAX-WIDTH 640PX */
 @media (max-width: 460px) {
-  .carousel-cell img {
-    width: 50px; }
+  .sectionFlickity {
+    margin: 0 auto;
+    max-width: 40%;
+    margin-bottom: 10px; }
   h2.reviewHeading__h2 {
     display: inline-block;
     margin: 20px 0;
@@ -879,11 +885,11 @@ h2.reviewHeading__h2 {
     position: relative; }
     .reviewsContent__body {
       position: absolute;
-      margin-top: -90px;
+      margin-top: -70px;
       width: 200px;
       font-size: 1.3rem; }
     .reviewsContent__author {
-      margin-top: 20px;
+      margin-top: 30px;
       width: 220px;
       font-size: 1.2rem;
       margin-bottom: 0px; }
@@ -894,13 +900,20 @@ h2.reviewHeading__h2 {
 /* REVIEWS SECTION STYLES END */
 /* EVENTS SECTION STYLES START */
 .eventsContent__cell {
+  overflow: hidden;
   -webkit-box-flex: 0;
   -ms-flex: 0 1 calc(100% / 3);
   flex: 0 1 calc(100% / 3); }
+  .eventsContent__cell:nth-of-type(1) {
+    position: relative; }
   .eventsContent__cell:nth-of-type(2) {
+    position: relative; }
+  .eventsContent__cell:nth-of-type(3) {
     position: relative; }
   .eventsContent__cell__image {
     height: 100%; }
+  .eventsContent__cell:hover .eventsContent__overlay {
+    top: 0px; }
 
 .eventsContent__overlay {
   position: absolute;
@@ -910,7 +923,7 @@ h2.reviewHeading__h2 {
   -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  height: 100%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -921,10 +934,14 @@ h2.reviewHeading__h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  top: 0;
+  top: -100%;
   right: 0;
-  bottom: 0;
-  left: 0; }
+  /* bottom: 0; */
+  left: 0;
+  -webkit-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  background-color: rgba(0, 0, 0, 0.7); }
   .eventsContent__overlay__body {
     font-size: 1.6rem;
     width: 80%;
@@ -1027,10 +1044,23 @@ h2.reviewHeading__h2 {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  -o-transition: transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
   text-align: center; }
+  .statsContent__cell:hover {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); }
   .statsContent__cell__icon {
     font-size: 4.0rem;
     margin-bottom: 25px; }
+    .statsContent__cell__icon:hover {
+      -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+      transform: scale(1.3); }
   .statsContent__cell__heading {
     font-size: 2.4rem; }
   .statsContent__cell__body {
@@ -1067,6 +1097,10 @@ h2.reviewHeading__h2 {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column; }
+  .blogContent__cell img:hover {
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer; }
   .blogContent__cell__heading {
     text-transform: none;
     font-size: 2.0rem;
@@ -1159,7 +1193,15 @@ h2.reviewHeading__h2 {
 
 .instagramGallery__cell {
   width: 22%;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  -webkit-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in; }
+  .instagramGallery__cell:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    cursor: pointer; }
 
 .footerNav {
   -webkit-box-orient: vertical;

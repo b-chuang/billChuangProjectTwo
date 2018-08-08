@@ -92,34 +92,43 @@
                 <h1 id="about"class="aboutUsHeading">We are...</h1>
                 <div class="aboutUsContent">
                     <div class="aboutUsGallery">
-
-   
-                            <figure class="aboutUsGalleryCell">
-                                <div class="containerAbout">
-
-                                    <img src="assets/image-2.jpeg" alt="A colorful plate of assorted cooked vegetables">
-                                    <h3 class="aboutUsGallery__cell__heading">Local</h3>
-                                </div>
-                                
-                                
-                                <div class="aboutUsGallery__cell__overlay">
-                                    <h4 class="aboutUsGallery__cell__overlay__text">lorem ipsum</h4>
-                                </div>
-                            </figure>
-
-
-
                         <figure class="aboutUsGalleryCell">
-                            <img src="assets/image-3.jpeg" alt="Glass bowl of assorted spices ready for mixing">
-                            <h3 class="aboutUsGallery__cell__heading">Modern</h3>
+                            <div class="containerAbout">
+                                <img src="assets/image-2.jpeg" alt="A colorful plate of assorted cooked vegetables">
+                                <h3 class="aboutUsGallery__cell__heading">Local</h3>
+                            </div>
+                            <div class="aboutUsGallery__cell__overlay">
+                                <h4 class="aboutUsGallery__cell__overlay__text">lorem ipsum</h4>
+                            </div>
                         </figure>
                         <figure class="aboutUsGalleryCell">
-                            <img src="assets/image-4.jpeg" alt="a woman with a glasses and a beanie">
-                            <h3 class="aboutUsGallery__cell__heading">Friendly</h3>
+                            <div class="containerAbout">
+                                <img src="assets/image-3.jpeg" alt="Glass bowl of assorted spices ready for mixing">
+                                <h3 class="aboutUsGallery__cell__heading">Modern</h3>
+                            </div>
+                            <div class="aboutUsGallery__cell__overlay">
+                                <h4 class="aboutUsGallery__cell__overlay__text">lorem ipsum</h4>
+                            </div>
                         </figure>
+
                         <figure class="aboutUsGalleryCell">
-                            <img src="assets/image-5.jpeg" alt="plate of stacked pancakes and strawberry and blueberries on top">
-                            <h3 class="aboutUsGallery__cell__heading">Delicious</h3>
+                            <div class="containerAbout">
+                                <img src="assets/image-4.jpeg" alt="a woman with a glasses and a beanie">
+                                <h3 class="aboutUsGallery__cell__heading">Friendly</h3>
+                            </div>
+                            <div class="aboutUsGallery__cell__overlay">
+                                <h4 class="aboutUsGallery__cell__overlay__text">lorem ipsum</h4>
+                            </div>
+                        </figure>
+
+                        <figure class="aboutUsGalleryCell">
+                            <div class="containerAbout">
+                                <img src="assets/image-5.jpeg" alt="plate of stacked pancakes and strawberry and blueberries on top">
+                                <h3 class="aboutUsGallery__cell__heading">Delicious</h3>
+                            </div>
+                            <div class="aboutUsGallery__cell__overlay">
+                                <h4 class="aboutUsGallery__cell__overlay__text">lorem ipsum</h4>
+                            </div>
                         </figure>
                     </div>
                     <div class="aboutUsContentText">
@@ -206,6 +215,12 @@
             <div class="eventsContent">
                 <div class="eventsContent__cell">
                     <img class="eventsContent__cell__image" src="assets/image-9.jpeg" alt="Grilled beef patty burger on a plate served with coleslaw and corn chips">
+                    <div class="eventsContent__overlay">
+                        <h2 class="eventsContent__overlay__heading">Sample Event</h2>
+                        <p class="eventsContent__overlay__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                        </p>
+                    </div>
+                    
                 </div>
                 <div class="eventsContent__cell">
                     <img class="eventsContent__cell__image" src="assets/image-10.jpeg" alt="Acai bowl with strawberries">
@@ -217,6 +232,10 @@
                 </div>
                 <div class="eventsContent__cell">
                     <img class="eventsContent__cell__image" src="assets/image-11.jpeg" alt="Cooking line with chefs being busy in a dimmly lit kitchen">
+                    <div class="eventsContent__overlay">
+                        <h2 class="eventsContent__overlay__heading">Sample Event</h2>
+                        <p class="eventsContent__overlay__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                        </p>
                 </div>
             </div>
         </section>
@@ -408,7 +427,7 @@
                 cellAlign: 'center',
                 // contain: true,
                 pageDots:false,
-                freeScroll:true,
+                /* freeScroll:true, */
                 contain:true
             });
 
